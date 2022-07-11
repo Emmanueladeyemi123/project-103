@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
         <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
@@ -16,18 +17,35 @@
     </head>
     <body>
         <h2>
-            Project 103
+            Face Recognition Web App
         </h2>
-        <div id="webcam_live_view">
+<h3>.
+    model is trained to identify the following objects
+</h3>
+
+<button class="btn btn-info" style="width: 100px;">
+    Emmanuel
+</button>
+    <br>
+    <br>
+    <button  class="btn btn-info" style="width: 100px;">
+    sophie
+</button>
+<h3>
+    Webcam view
+</h3>
+        <div id="camera">
+
         </div>
-<div id="captured_img">
+<div id="result">
 
 </div>
-<button onclick="capture_image()">
-Captue image
-</button>
-<span id="identify">
+<button onclick="take_Snapshot()" class="btn btn-info">Capture Image</button>
+
+
+<span id="identify_object">
 
 </span>
+<span id="accuracy"></span>
     </body>
 </html>
