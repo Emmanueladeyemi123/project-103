@@ -21,3 +21,10 @@ function take_Snapshot(){
         document.getElementById("result").innerHTML='<img id="captured_image" src="'+data_uri+'">';
     });
 }
+
+function check()
+{
+    img=document.getElementById("captured_image");
+    classifier.classify(img,gotResult);
+}
+
